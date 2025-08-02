@@ -1,0 +1,15 @@
+{
+    "i18n-ally.localesPaths": [
+        "public/locales",
+        "src/shared/config/i18n"
+    ],
+    "css.validate": false,
+	"less.validate": false,
+	"scss.validate": false,
+
+	"editor.formatOnSave": false,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.stylelint": "explicit"
+	},
+	"files.autoSaveDelay": 500,
+}
