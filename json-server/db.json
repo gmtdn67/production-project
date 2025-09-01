@@ -41,13 +41,13 @@
     }
   ],
   "profile": {
-    "first": "Петр",
-    "lastname": "Кочетков",
+    "first": "Антон",
+    "lastname": "Леонтьев",
     "age": 22,
     "currency": "RUB",
     "country": "Russia",
-    "city": "Moscow",
+    "city": "Novosibirsk",
     "username": "admin",
-    "avatar": "https://pic.rutubelist.ru/user/3b/27/3b2758ad5492a76b578f7ee072e4e894.jpg"
+    "avatar": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Anonymous_emblem.svg/2048px-Anonymous_emblem.svg.png"
   }
 }
