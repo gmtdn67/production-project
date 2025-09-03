@@ -29,7 +29,7 @@ export const Select = memo(({
         >
             {opt.content}
         </option>
-    )), []);
+    )), [options]);
 
     const onChangeHandler = (e: ChangeEvent<HTMLSelectElement>) => {
         if (onChange) {
