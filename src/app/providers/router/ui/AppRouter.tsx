@@ -1,23 +1,36 @@
 import { getUserAuthData } from 'entities/Users';
-import React, { Suspense, useMemo, memo } from 'react';
+import React, {
+    Suspense, useMemo, memo, useCallback,
+} from 'react';
 import { useSelector } from 'react-redux';
 import { Route, Routes } from 'react-router-dom';
-import { routeConfig } from 'shared/config/routeConfig/routeConfig';
+import { routeConfig, AppRoutesProps } from 'shared/config/routeConfig/routeConfig';
 import { PageLoader } from 'shared/ui/PageLoader/PageLoader';
+import { RequireAuth } from './RequireAuth';
 
 const AppRouter = () => {
-    const isAuth = useSelector(getUserAuthData);
+    const renderWithWrapper = useCallback((route: AppRoutesProps) => {
+        const element = (
+            <Suspense fallback={<PageLoader />}>
+                <div className="page-wrapper">
+                    {route.element}
+                </div>
+            </Suspense>
+        );
 
-    const routes = useMemo(() => Object.values(routeConfig).filter((route) => {
-        if (route.authOnly && !isAuth) {
-            return false;
-        }
-        return true;
-    }), [isAuth]);
+        return (
+            <Route
+                key={route.path}
+                path={route.path}
+                element={route.authOnly ? <RequireAuth>{element}</RequireAuth> : element}
+            />
+        );
+    }, []);
 
     return (
         <Routes>
-            {routes.map(({ element, path }) => (
+            {Object.values(routeConfig).map(renderWithWrapper)}
+            {/* {routes.map(({ element, path }) => (
                 <Route
                     key={path}
                     path={path}
@@ -29,7 +42,7 @@ const AppRouter = () => {
                         </Suspense>
                     )}
                 />
-            ))}
+            ))} */}
         </Routes>
     );
 };
