@@ -1,6 +1,6 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { StoreDecorator } from 'shared/config/storybook/StoreDecorator/StoreDecorator';
-import { ArticleBlockType, ArticleType, Article } from 'entities/Article/model/types/artcile';
+import { ArticleBlockType, ArticleType, Article } from 'entities/Article/model/types/article';
 import { ArticleDetails } from './ArticleDetails';
 
 export default {
@@ -17,10 +17,14 @@ const article: Article = {
 
     id: '1',
     title: 'Javascript news',
+    user: {
+        id: '1',
+        username: 'test user',
+    },
     subtitle: 'Что нового в JS за 2022 год?',
     img: 'https://teknotower.com/wp-content/uploads/2020/11/js.png',
     views: 1022,
-    createdAt: new Date(2025, 2, 25),
+    createdAt: '25.02.2025',
     type: [ArticleType.IT],
     blocks: [
         {
