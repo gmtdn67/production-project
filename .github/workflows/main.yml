@@ -36,6 +36,3 @@ jobs:
       - name: screenshot testing acception
         run: npm run test:ui:ok
         if: always()
-      - name: screenshot testing
-        run: npm run test:ui:ok
-        if: always()
