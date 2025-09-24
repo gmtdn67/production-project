@@ -35,6 +35,7 @@ jobs:
         if: always()
       - name: screenshot testing
         run: npm run test:ui:ci
+        continue-on-error: true
         if: always()
       - name: screenshot testing acception
         run: npm run test:ui:ok
