@@ -1,10 +1,8 @@
 import { StateSchema } from 'app/providers/StoreProvider';
-import { Currency } from 'entities/Currency';
-import { Country } from 'entities/Country';
 import { getProfileIsLoading } from './getProfileIsLoading';
 
 describe('getProfileIsLoading.test', () => {
-    test('selector test', () => {
+    test('should work with filled state', () => {
         const state: DeepPartial<StateSchema> = {
             profile: {
                 isLoading: true,
@@ -12,8 +10,7 @@ describe('getProfileIsLoading.test', () => {
         };
         expect(getProfileIsLoading(state as StateSchema)).toEqual(true);
     });
-
-    test('empty state', () => {
+    test('should work with empty state', () => {
         const state: DeepPartial<StateSchema> = {};
         expect(getProfileIsLoading(state as StateSchema)).toEqual(undefined);
     });

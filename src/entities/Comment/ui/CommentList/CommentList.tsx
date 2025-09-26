@@ -1,10 +1,10 @@
 import { classNames } from 'shared/lib/classNames/classNames';
-import { Comment } from 'entities/Comment/model/types/comment';
 import { memo } from 'react';
 import { Text } from 'shared/ui/Text/Text';
 import { useTranslation } from 'react-i18next';
 import cls from './CommentList.module.scss';
 import { CommentCard } from '../CommentCard/CommentCard';
+import { Comment } from '../../model/types/comment';
 
 interface CommentListProps {
     className?: string;
@@ -13,7 +13,7 @@ interface CommentListProps {
 }
 
 export const CommentList = memo((props: CommentListProps) => {
-    const { className, comments, isLoading } = props;
+    const { className, isLoading, comments } = props;
     const { t } = useTranslation();
 
     if (isLoading) {
@@ -25,6 +25,7 @@ export const CommentList = memo((props: CommentListProps) => {
             </div>
         );
     }
+
     return (
         <div className={classNames(cls.CommentList, {}, [className])}>
             {comments?.length

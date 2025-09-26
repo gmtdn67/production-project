@@ -29,7 +29,12 @@ interface TextProps {
 
 export const Text = memo((props: TextProps) => {
     const {
-        className, title, text, theme = TextTheme.PRIMARY, align = TextAlign.LEFT, size = TextSize.M,
+        className,
+        text,
+        title,
+        theme = TextTheme.PRIMARY,
+        align = TextAlign.LEFT,
+        size = TextSize.M,
     } = props;
 
     const mods: Mods = {

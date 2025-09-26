@@ -1,19 +1,16 @@
 import { classNames } from 'shared/lib/classNames/classNames';
-import { Text } from 'shared/ui/Text/Text';
+import { memo } from 'react';
 import { Card } from 'shared/ui/Card/Card';
-import { Avatar } from 'shared/ui/Avatar/Avatar';
-import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { Skeleton } from 'shared/ui/Skeleton/Skeleton';
 import cls from './ArticleListItem.module.scss';
-import { ArticleBlockType, ArticleTextBlock, ArticleView } from '../../model/types/article';
-import { ArticleTextBlockComponent } from '../ArticleTextBlockComponent/ArticleTextBlockComponent';
+import { ArticleView } from '../../model/types/article';
 
 interface ArticleListItemSkeletonProps {
     className?: string;
     view: ArticleView;
 }
 
-export const ArticleListItemSkeleton = (props: ArticleListItemSkeletonProps) => {
+export const ArticleListItemSkeleton = memo((props: ArticleListItemSkeletonProps) => {
     const { className, view } = props;
 
     if (view === ArticleView.BIG) {
@@ -21,7 +18,7 @@ export const ArticleListItemSkeleton = (props: ArticleListItemSkeletonProps) => 
             <div className={classNames(cls.ArticleListItem, {}, [className, cls[view]])}>
                 <Card className={cls.card}>
                     <div className={cls.header}>
-                        <Skeleton width={30} height={30} border="50%" />
+                        <Skeleton border="50%" height={30} width={30} />
                         <Skeleton width={150} height={16} className={cls.username} />
                         <Skeleton width={150} height={16} className={cls.date} />
                     </div>
@@ -48,4 +45,4 @@ export const ArticleListItemSkeleton = (props: ArticleListItemSkeletonProps) => 
             </Card>
         </div>
     );
-};
+});

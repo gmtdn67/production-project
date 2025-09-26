@@ -1,6 +1,6 @@
+import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
-import { Theme } from 'app/providers/ThemeProvider';
+
 import { CommentList } from './CommentList';
 
 export default {
@@ -13,52 +13,24 @@ export default {
 
 const Template: ComponentStory<typeof CommentList> = (args) => <CommentList {...args} />;
 
-export const Primary = Template.bind({});
-Primary.args = {
+export const Normal = Template.bind({});
+Normal.args = {
     comments: [
         {
             id: '1',
-            text: 'hello world!',
-            user: {
-                id: '1',
-                username: 'Vasya',
-            },
+            text: 'hello world',
+            user: { id: '1', username: 'Vasya' },
         },
         {
             id: '2',
-            text: 'Привет мир!',
-            user: {
-                id: '2',
-                username: 'Marat',
-            },
+            text: 'Comment 2',
+            user: { id: '1', username: 'Petya' },
         },
     ],
 };
-
-export const Dark = Template.bind({});
-Dark.args = {
-    comments: [
-        {
-            id: '1',
-            text: 'hello world!',
-            user: {
-                id: '1',
-                username: 'Vasya',
-            },
-        },
-        {
-            id: '2',
-            text: 'Привет мир!',
-            user: {
-                id: '2',
-                username: 'Marat',
-            },
-        },
-    ],
-};
-Dark.decorators = [ThemeDecorator(Theme.DARK)];
 
 export const Loading = Template.bind({});
 Loading.args = {
+    comments: [],
     isLoading: true,
 };
