@@ -1,0 +1,19 @@
+{
+    "Профиль": "Profile",
+    "Редактировать": "Edit",
+    "Ваша фамилия": "Your surname",
+    "Ваше имя": "Your name",
+    "Произошла ошибка при загрузке данных": "Loading data error",
+    "Попробуйте обновить страницу": "Try to reload page",
+    "Отменить": "Disable",
+    "Сохранить": "Save",
+    "Ваш возраст": "Your age",
+    "Город": "City",
+    "Имя пользователя": "Username",
+    "Ссылка на аватар": "Avatar reference",
+    "Серверная ошибка при сохранении": "Server error",
+    "Некорректный возраст": "Incorrect age",
+    "Данные по стране не указаны": "No country data",
+    "Имя и фамилия обязательны": "Firstname and lastname required",
+    "Данные не указаны": "No data"
+}
