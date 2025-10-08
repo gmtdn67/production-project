@@ -7,8 +7,8 @@ import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { useSelector } from 'react-redux';
 import { getUserAuthData } from 'entities/User';
 import { getArticleDetailsData } from 'entities/Article';
-import { getCanEditArticle } from 'pages/ArticleDetailsPage/model/selectors/article';
-import cls from './ArticleDetailsPageHeader.module.scss';
+import { HStack } from 'shared/ui/Stack';
+import { getCanEditArticle } from '../../../model/selectors/article';
 
 interface ArticleDetailsPageHeaderProps {
     className?: string;
@@ -30,15 +30,15 @@ export const ArticleDetailsPageHeader = ({ className }: ArticleDetailsPageHeader
     }, [navigate, article?.id]);
 
     return (
-        <div className={classNames(cls.ArticleDetailsPageHeader, {}, [className])}>
+        <HStack max justify="between" className={classNames('', {}, [className])}>
             <Button theme={ButtonTheme.OUTLINE} onClick={onBackToList}>
                 {t('Назад к списку')}
             </Button>
             {canEdit && (
-                <Button theme={ButtonTheme.OUTLINE} onClick={onEditArticle} className={cls.editBtn}>
+                <Button theme={ButtonTheme.OUTLINE} onClick={onEditArticle}>
                     {t('Редактировать')}
                 </Button>
             )}
-        </div>
+        </HStack>
     );
 };
