@@ -45,7 +45,7 @@ describe('features/EditableProfileCard', () => {
     });
 
     test('При отмене значения должны обнуляться', async () => {
-        componentRender(<EditableProfileCard />, options);
+        componentRender(<EditableProfileCard id="1" />, options);
 
         await userEvent.click(screen.getByTestId('EditableProfileCardHeader.EditButton'));
         await userEvent.clear(screen.getByTestId('ProfileCard.firstname'));
@@ -64,7 +64,7 @@ describe('features/EditableProfileCard', () => {
     });
 
     test('Должна появляться ошибка валидации', async () => {
-        componentRender(<EditableProfileCard />, options);
+        componentRender(<EditableProfileCard id="1" />, options);
 
         await userEvent.click(screen.getByTestId('EditableProfileCardHeader.EditButton'));
 
@@ -77,7 +77,7 @@ describe('features/EditableProfileCard', () => {
 
     test('Если нет ошибок валидации, то на сервер отправляется PUT запрос', async () => {
         const mockPutRequest = jest.spyOn($api, 'put');
-        componentRender(<EditableProfileCard />, options);
+        componentRender(<EditableProfileCard id="1" />, options);
 
         await userEvent.click(screen.getByTestId('EditableProfileCardHeader.EditButton'));
 
