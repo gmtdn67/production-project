@@ -1,6 +1,7 @@
-export {
+export { ValidateProfileError } from 'features/editableProfileCard/model/consts/consts';
+
+export type {
     Profile,
-    ValidateProfileError,
 } from './model/types/profile';
 
 export {
