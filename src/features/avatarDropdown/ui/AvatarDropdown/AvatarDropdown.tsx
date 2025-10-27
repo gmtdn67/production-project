@@ -8,7 +8,6 @@ import {
     getUserAuthData, isUserAdmin, isUserManager, userActions,
 } from 'entities/User';
 import { useCallback } from 'react';
-import cls from './AvatarDropdown.module.scss';
 
 interface AvatarDropdownProps {
     className?: string;
@@ -34,7 +33,7 @@ export const AvatarDropdown = ({ className }: AvatarDropdownProps) => {
     return (
         <Dropdown
             direction="bottom left"
-            className={classNames(cls.AvatarDropdown, {}, [className])}
+            className={classNames('', {}, [className])}
             items={[
                 ...(isAdminPanelAvailable ? [{
                     content: t('Панель администратора'),
