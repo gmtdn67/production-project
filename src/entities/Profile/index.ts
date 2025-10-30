@@ -1,4 +1,4 @@
-export { ValidateProfileError } from 'features/editableProfileCard/model/consts/consts';
+export { ValidateProfileError } from '@/features/editableProfileCard/model/consts/consts';
 
 export type {
     Profile,
