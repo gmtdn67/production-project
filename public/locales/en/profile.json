@@ -15,5 +15,6 @@
     "Некорректный возраст": "Incorrect age",
     "Данные по стране не указаны": "No country data",
     "Имя и фамилия обязательны": "Firstname and lastname required",
-    "Данные не указаны": "No data"
+    "Данные не указаны": "No data",
+    "Оцените пользователя": "Rate user"
 }

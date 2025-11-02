@@ -648,21 +648,27 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "roles": ["ADMIN"],
+      "roles": [
+        "ADMIN"
+      ],
       "avatar": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Anonymous_emblem.svg"
     },
     {
       "id": "2",
       "username": "user",
       "password": "123",
-      "roles": ["USER"],
+      "roles": [
+        "USER"
+      ],
       "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
     },
     {
       "id": "3",
       "username": "manager",
       "password": "123",
-      "roles": ["MANAGER"],
+      "roles": [
+        "MANAGER"
+      ],
       "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
     }
   ],
@@ -688,6 +694,89 @@
       "city": "Moscow",
       "username": "user",
       "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
+    }
+  ],
+  "article-ratings": [
+    {
+      "id": "1",
+      "rate": 4,
+      "feedback": "Хорошая статья",
+      "userId": "1",
+      "articleId": "1"
+    },
+    {
+      "id": "2",
+      "rate": 3,
+      "feedback": "Хорошая статья",
+      "userId": "1",
+      "articleId": "2"
+    },
+    {
+      "userId": "1",
+      "articleId": "3",
+      "rate": 4,
+      "feedback": "",
+      "id": "Z0s_oLe"
+    },
+    {
+      "userId": "1",
+      "articleId": "9",
+      "rate": 2,
+      "feedback": "Nice article!!!",
+      "id": "NwH9KyN"
+    },
+    {
+      "userId": "1",
+      "articleId": "10",
+      "rate": 3,
+      "feedback": "Отзыв!",
+      "id": "JslSTBG"
+    }
+  ],
+  "profile-ratings": [
+    {
+      "id": "1",
+      "rate": 4,
+      "feedback": "Хорошая статья",
+      "userId": "1",
+      "profileId": "1"
+    },
+    {
+      "id": "2",
+      "rate": 3,
+      "feedback": "Хорошая статья",
+      "userId": "1",
+      "profileId": "2"
+    },
+    {
+      "userId": "1",
+      "profileId": "2",
+      "rate": 3,
+      "id": "Ew1aVBC"
+    },
+    {
+      "userId": "1",
+      "profileId": "2",
+      "rate": 3,
+      "id": "gdi3zxd"
+    },
+    {
+      "userId": "1",
+      "profileId": "1",
+      "rate": 4,
+      "id": "PIIZdrs"
+    },
+    {
+      "userId": "1",
+      "profileId": "2",
+      "rate": 2,
+      "id": "rR5e58U"
+    },
+    {
+      "userId": "1",
+      "profileId": "2",
+      "rate": 2,
+      "id": "MeXiAe8"
     }
   ]
 }
