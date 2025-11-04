@@ -12,14 +12,18 @@ interface ProfilePageProps {
 const ProfilePage = ({ className }: ProfilePageProps) => {
     const { id } = useParams<{ id: string}>();
 
-    return (
-        <Page className={classNames('', {}, [className])}>
-            <VStack gap="16" max>
-                <EditableProfileCard id={id} />
-                <ProfileRating profileId={id}/>
-            </VStack>
-        </Page>
-    );
+    if (id) {
+        return (
+            <Page className={classNames('', {}, [className])}>
+                <VStack gap="16" max>
+                    <EditableProfileCard id={id} />
+                    <ProfileRating profileId={id} />
+                </VStack>
+            </Page>
+        );
+    }
+
+    return null;
 };
 
 export default ProfilePage;

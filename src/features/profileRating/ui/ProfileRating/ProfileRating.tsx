@@ -1,12 +1,12 @@
 import { memo, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
 import { RatingCard } from '@/entities/Rating';
 import { useGetProfileRating, useRateProfile } from '../../api/profileRatingApi';
-import { useSelector } from 'react-redux';
 import { getUserAuthData } from '@/entities/User';
 import { Skeleton } from '@/shared/ui/Skeleton/Skeleton';
 
-interface ProfileRatingProps {
+export interface ProfileRatingProps {
     className?: string;
     profileId: string;
 }
@@ -15,32 +15,36 @@ export const ProfileRating = memo((props: ProfileRatingProps) => {
     const { className, profileId } = props;
     const { t } = useTranslation('profile');
     const userData = useSelector(getUserAuthData);
-    const { data, isLoading } = useGetProfileRating({profileId})
-    const [ rateProfileMutaion ] = useRateProfile();
-    const rating = data?.[0]
+    const { data, isLoading } = useGetProfileRating({ profileId });
+    const [rateProfileMutaion] = useRateProfile();
+    const rating = data?.[0];
 
-    const onAccept = useCallback( (starsCount: number) => {
+    const onAccept = useCallback((starsCount: number) => {
         try {
             rateProfileMutaion({
                 userId: userData?.id ?? '',
                 profileId,
-                rate: starsCount
-            })
+                rate: starsCount,
+            });
         } catch (e) {
-            console.log(e)
+            console.log(e);
         }
-    }, [rateProfileMutaion, profileId, userData?.id])
+    }, [rateProfileMutaion, profileId, userData?.id]);
 
     if (isLoading) {
-        return <Skeleton width={"100%"} height={120}/>
+        return <Skeleton width="100%" height={140} />;
     }
-    return (
-        <RatingCard
-            className={className}
-            title={t('Оцените пользователя')}
-            hasFeedback={false} 
-            rate={rating?.rate}
-            onAccept={onAccept}
-        />
-    );
+    if (userData?.id !== profileId) {
+        return (
+            <RatingCard
+                className={className}
+                title={t('Оцените пользователя')}
+                hasFeedback={false}
+                rate={rating?.rate}
+                onAccept={onAccept}
+            />
+        );
+    }
+
+    return null;
 });

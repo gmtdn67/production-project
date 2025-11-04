@@ -10,18 +10,18 @@ interface RateProfileArg {
 const profileRatingApi = rtkApi.injectEndpoints({
     endpoints: (build) => ({
         getProfileRating: build.query<Rating[], {profileId: string}>({
-            query: ({profileId}) => ({
+            query: ({ profileId }) => ({
                 url: '/profile-ratings',
                 params: {
-                    profileId
-                }
+                    profileId,
+                },
             }),
         }),
         rateProfile: build.mutation<void, RateProfileArg>({
             query: (arg) => ({
                 url: '/profile-ratings',
-                method: 'POST', 
-                body: arg
+                method: 'POST',
+                body: arg,
             }),
         }),
     }),

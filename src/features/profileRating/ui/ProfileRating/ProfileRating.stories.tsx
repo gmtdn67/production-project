@@ -1,9 +1,8 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { ProfileRating } from './ProfileRating';
 
-
 export default {
-    title: '/ProfileRating',
+    title: 'features/ProfileRating',
     component: ProfileRating,
     argTypes: {
         backgroundColor: { control: 'color' },
@@ -14,6 +13,4 @@ const Template: ComponentStory<typeof ProfileRating> = (args) => <ProfileRating 
 
 export const Primary = Template.bind({});
 Primary.args = {
-    children: 'Text',
 };
-

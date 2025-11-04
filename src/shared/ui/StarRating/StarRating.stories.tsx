@@ -1,9 +1,8 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { StarRating } from './StarRating';
 
-
 export default {
-    title: '/StarRating',
+    title: 'shared/StarRating',
     component: StarRating,
     argTypes: {
         backgroundColor: { control: 'color' },
@@ -14,6 +13,4 @@ const Template: ComponentStory<typeof StarRating> = (args) => <StarRating {...ar
 
 export const Primary = Template.bind({});
 Primary.args = {
-    children: 'Text',
 };
-
