@@ -19,7 +19,6 @@ interface RatingCardProps {
     onCancel?: (starsCount: number) => void;
     onAccept?: (starsCount: number, feedback?: string) => void;
     rate?: number;
-
 }
 
 export const RatingCard = memo((props: RatingCardProps) => {
