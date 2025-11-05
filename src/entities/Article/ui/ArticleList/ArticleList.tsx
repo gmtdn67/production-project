@@ -1,11 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { HTMLAttributeAnchorTarget, memo } from 'react';
-import {
-    AutoSizer, List, ListRowProps, WindowScroller,
-} from 'react-virtualized';
 import { Text, TextSize } from '@/shared/ui/Text/Text';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { PAGE_ID } from '@/widgets/Page/Page';
 import { ArticleListItemSkeleton } from '../ArticleListItem/ArticleListItemSkeleton';
 import { ArticleListItem } from '../ArticleListItem/ArticleListItem';
 import cls from './ArticleList.module.scss';
