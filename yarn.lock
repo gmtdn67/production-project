@@ -7478,11 +7478,12 @@
     "debug" "^3.2.7"
     "find-up" "^2.1.0"
 
-"eslint-plugin-gmt9n-plugin@^0.0.3":
-  "integrity" "sha512-Tj5bRfRDZO4PmE7h1vx0frzXqP7F0bXBXdaLSDy/rBLHEe1Z3Y3r9ZzQ0sdcB1MsM232BpVIJ/BD9NFr7OizbA=="
-  "resolved" "https://registry.npmjs.org/eslint-plugin-gmt9n-plugin/-/eslint-plugin-gmt9n-plugin-0.0.3.tgz"
-  "version" "0.0.3"
+"eslint-plugin-gmt9n-plugin@^0.0.4":
+  "integrity" "sha512-MsE7Kp3QzmF9JYOYNl0zlR9bwgffwIe823Moyww8NYbL4MDVRxrKvR55RUgF14ds5kHxNmBVwEIeSA2tGfq8pA=="
+  "resolved" "https://registry.npmjs.org/eslint-plugin-gmt9n-plugin/-/eslint-plugin-gmt9n-plugin-0.0.4.tgz"
+  "version" "0.0.4"
   dependencies:
+    "micromatch" "^4.0.5"
     "requireindex" "^1.2.0"
 
 "eslint-plugin-i18next@^5.1.2":
@@ -11303,7 +11304,7 @@
     "snapdragon" "^0.8.1"
     "to-regex" "^3.0.2"
 
-"micromatch@^4.0.0", "micromatch@^4.0.2", "micromatch@^4.0.4":
+"micromatch@^4.0.0", "micromatch@^4.0.2", "micromatch@^4.0.4", "micromatch@^4.0.5":
   "integrity" "sha512-PXwfBhYu0hBCPw8Dn0E+WDYb7af3dSLVWKi3HGv84IdF4TyFoC0ysxFd0Goxw7nSv4T/PzEJQxsYsEiFCKo2BA=="
   "resolved" "https://registry.npmjs.org/micromatch/-/micromatch-4.0.8.tgz"
   "version" "4.0.8"

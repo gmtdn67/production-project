@@ -59,7 +59,12 @@ module.exports = {
         'no-undef': 'off',
         'react/no-array-index-key': 'off',
         'gmt9n-plugin/path-checker': ['error', { alias: '@' }],
-        'gmt9n-plugin/public-api-imports': ['error', { alias: '@' }],
+        'gmt9n-plugin/public-api-imports': ['error',
+            {
+                alias: '@',
+                testFilePatterns: ['**/*.test.*', '**/StoreDecorator.tsx', '**/*.story.*'],
+            },
+        ],
 
     },
     globals: {
