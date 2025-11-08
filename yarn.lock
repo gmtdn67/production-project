@@ -7478,10 +7478,10 @@
     "debug" "^3.2.7"
     "find-up" "^2.1.0"
 
-"eslint-plugin-gmt9n-plugin@^0.0.4":
-  "integrity" "sha512-MsE7Kp3QzmF9JYOYNl0zlR9bwgffwIe823Moyww8NYbL4MDVRxrKvR55RUgF14ds5kHxNmBVwEIeSA2tGfq8pA=="
-  "resolved" "https://registry.npmjs.org/eslint-plugin-gmt9n-plugin/-/eslint-plugin-gmt9n-plugin-0.0.4.tgz"
-  "version" "0.0.4"
+"eslint-plugin-gmt9n-plugin@^0.0.5":
+  "integrity" "sha512-/sNuRWm+J3avuuWqAGS3MKiaKYZBNqGYRWVzzvI3N1rg4UIREB/J8ctMRmCrmbidwUBkbjtQlLSVbv453A/gpA=="
+  "resolved" "https://registry.npmjs.org/eslint-plugin-gmt9n-plugin/-/eslint-plugin-gmt9n-plugin-0.0.5.tgz"
+  "version" "0.0.5"
   dependencies:
     "micromatch" "^4.0.5"
     "requireindex" "^1.2.0"
@@ -7554,13 +7554,6 @@
     "resolve" "^2.0.0-next.3"
     "semver" "^6.3.0"
     "string.prototype.matchall" "^4.0.6"
-
-"eslint-plugin-ulbi-tv-plugin@^0.0.1":
-  "integrity" "sha512-awxUVm2mxJQ9h3DVaZQuikJEkNG4KchgS80frAQ/AeUYGFYyJQqPGWnRqyETfGypbWCQiaRb/nFWuct83Q3BEw=="
-  "resolved" "https://registry.npmjs.org/eslint-plugin-ulbi-tv-plugin/-/eslint-plugin-ulbi-tv-plugin-0.0.1.tgz"
-  "version" "0.0.1"
-  dependencies:
-    "requireindex" "^1.2.0"
 
 "eslint-scope@^4.0.3":
   "integrity" "sha512-p7VutNr1O/QrxysMo3E45FjYDTeXBy0iTltPFNSqKAIfjDSXC+4dj+qfyuD8bfAXrW/y6lW3O76VaYNPKfpKrg=="
