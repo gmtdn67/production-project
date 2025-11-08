@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { useSearchParams } from 'react-router-dom';
-import { Text, TextTheme } from '@/shared/ui/Text/Text';
+import { Text, TextTheme } from '@/shared/ui/Text';
 import { ArticleList } from '@/entities/Article';
 import { getArticles } from '../../model/slices/articlesPageSlice';
 import {
