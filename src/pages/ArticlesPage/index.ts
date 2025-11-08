@@ -1,5 +1,3 @@
-import { articlesPageActions } from './model/slices/articlesPageSlice';
-
 export {
     ArticlesPageAsync as ArticlesPage,
 } from './ui/ArticlesPage/ArticlesPage.async';
