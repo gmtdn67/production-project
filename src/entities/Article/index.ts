@@ -3,7 +3,6 @@ export { getArticleDetailsData } from './model/selectors/articleDetails';
 export { ArticleTypeTabs } from './ui/ArticleTypeTabs/ArticleTypeTabs';
 
 export { ArticleSortSelector } from './ui/ArticleSortSelector/ArticleSortSelector';
-export { articleDetailsReducer } from './model/slice/articleDetailsSlice';
 
 export {
     ArticleDetails,

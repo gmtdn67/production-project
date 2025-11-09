@@ -7478,10 +7478,10 @@
     "debug" "^3.2.7"
     "find-up" "^2.1.0"
 
-"eslint-plugin-gmt9n-plugin@^0.0.5":
-  "integrity" "sha512-/sNuRWm+J3avuuWqAGS3MKiaKYZBNqGYRWVzzvI3N1rg4UIREB/J8ctMRmCrmbidwUBkbjtQlLSVbv453A/gpA=="
-  "resolved" "https://registry.npmjs.org/eslint-plugin-gmt9n-plugin/-/eslint-plugin-gmt9n-plugin-0.0.5.tgz"
-  "version" "0.0.5"
+"eslint-plugin-gmt9n-plugin@^0.0.6":
+  "integrity" "sha512-YClv0GDqaRX26apb5EXgBxHQ72e6IYrJmBHTOtAOi8pAJwN8NtMEG6NBlpa0lQhkQAqnGDevCLfTjSRvGE/G6g=="
+  "resolved" "https://registry.npmjs.org/eslint-plugin-gmt9n-plugin/-/eslint-plugin-gmt9n-plugin-0.0.6.tgz"
+  "version" "0.0.6"
   dependencies:
     "micromatch" "^4.0.5"
     "requireindex" "^1.2.0"
