@@ -13,7 +13,15 @@ export const parameters = {
             date: /Date$/,
         },
     },
-    layout: 'fullscreen'
+    layout: 'fullscreen',
+    themes: {
+        default: 'light',
+        list: [
+            {name: 'light', class: Theme.LIGHT, color: '#ffffff'},
+            {name: 'dark', class: Theme.DARK, color: '#090949'},
+            {name: 'orange', class: Theme.ORANGE, color: '#bd5012'},
+        ],
+    },
 };
 
 addDecorator(StyleDecorator);
