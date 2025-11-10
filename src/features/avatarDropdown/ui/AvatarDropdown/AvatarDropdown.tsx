@@ -4,10 +4,10 @@ import { useCallback } from 'react';
 import { Avatar } from '@/shared/ui/Avatar';
 import { Dropdown } from '@/shared/ui/Popups';
 import { classNames } from '@/shared/lib/classNames/classNames';
-import { RoutePath } from '@/shared/config/routeConfig/routeConfig';
 import {
     getUserAuthData, isUserAdmin, isUserManager, userActions,
 } from '@/entities/User';
+import { getRouteAdminPanel, getRouteProfile } from '@/shared/config/routeConfig/routeConfig';
 
 interface AvatarDropdownProps {
     className?: string;
@@ -37,12 +37,12 @@ export const AvatarDropdown = ({ className }: AvatarDropdownProps) => {
             items={[
                 ...(isAdminPanelAvailable ? [{
                     content: t('Панель администратора'),
-                    href: RoutePath.admin_panel,
+                    href: getRouteAdminPanel(),
                 }] : []),
 
                 {
                     content: t('Профиль пользователя'),
-                    href: RoutePath.profile + authData.id,
+                    href: getRouteProfile(authData.id),
                 },
                 {
                     content: t('Выйти'),
