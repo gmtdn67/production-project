@@ -1,5 +1,5 @@
 export const getRouteMain = () => '/';
-export const getRouteAbout = () => '/';
+export const getRouteAbout = () => '/about';
 export const getRouteProfile = (id: string) => `/profile/${id}`;
 export const getRouteArticles = () => '/articles';
 export const getRouteArticleDetails = (id: string) => `/articles/${id}`;
