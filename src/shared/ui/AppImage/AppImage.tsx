@@ -20,20 +20,18 @@ export const AppImage = memo((props: AppImageProps) => {
     const [isLoading, setIsLoading] = useState(true);
     const [hasError, setHasError] = useState(false);
 
-    useLayoutEffect(
-        () => {
-            const img = new Image();
-            img.src = src ?? '';
-            img.onload = () => {
-                setIsLoading(false);
-            };
-            img.onerror = () => {
-                setIsLoading(false);
-                setHasError(true);
-            };
-        },
-        [],
-    );
+    useLayoutEffect(() => {
+        const img = new Image();
+        img.src = src ?? '';
+        img.onload = () => {
+            setIsLoading(false);
+        };
+        img.onerror = () => {
+            setIsLoading(false);
+            setHasError(true);
+        };
+    }, [src]);
+
     if (isLoading && fallback) {
         return fallback;
     }

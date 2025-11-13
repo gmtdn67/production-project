@@ -1,7 +1,6 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { AppImage } from './AppImage';
 
-
 export default {
     title: '/AppImage',
     component: AppImage,
@@ -16,4 +15,3 @@ export const Primary = Template.bind({});
 Primary.args = {
     children: 'Text',
 };
-
