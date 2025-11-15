@@ -1,4 +1,4 @@
-const fs = require('fs');
+/* const fs = require('fs');
 
 async function deleteCache() {
     const cachePath = '.\\node_modules\\.cache';
@@ -16,3 +16,6 @@ async function deleteCache() {
 }
 
 deleteCache();
+ */
+
+console.log('CLEAR CACHE');
