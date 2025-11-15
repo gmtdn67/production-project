@@ -32,9 +32,4 @@ jobs:
         run: npm run test:unit
       - name: build storybook
         run: npm run storybook:build
-<<<<<<< HEAD
         if: always()
-=======
-        if: always()
-      
->>>>>>> e4051e69e742248b3ab0139acdfbfecf07d35cfa
