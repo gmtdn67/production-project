@@ -669,7 +669,16 @@
       "roles": [
         "MANAGER"
       ],
-      "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
+      "avatar": "https://upload.wikimedia.org/wikipedia/commons/7/71/S_Mavrodi_2012.jpg"
+    },
+    {
+      "id": "4",
+      "username": "testuser",
+      "password": "123",
+      "roles": [
+        "ADMIN"
+      ],
+      "avatar": "https://img.freepik.com/premium-vector/test-icon-vector-design-templates_1172029-3110.jpg"
     }
   ],
   "profile": [
