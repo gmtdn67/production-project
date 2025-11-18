@@ -82,7 +82,7 @@ export const ArticlesPageFilters = ({ className }: ArticlesPageFiltersProps) => 
                 <ArticleViewSelector view={view} onViewClick={onChangeView} />
             </div>
             <Card className={cls.search}>
-                <Input placeholder={t('Поиск')} value={search} onChange={onChangeSearch} />
+                <Input data-testid="SearchInput" placeholder={t('Поиск')} value={search} onChange={onChangeSearch} />
             </Card>
             <ArticleTypeTabs value={type} onChangeType={onChangeType} className={cls.tabs} />
         </div>
