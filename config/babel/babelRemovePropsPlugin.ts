@@ -10,7 +10,8 @@ export default function (): PluginItem {
                     JSXIdentifier(current) {
                         const nodename = current.node.name;
 
-                        if (forbidden.includes(nodename)) { // nodeName === 'data-testid'
+                        if (forbidden.includes(nodename)) {
+                            // nodeName === 'data-testid'
                             current.parentPath.remove();
                         }
                     },

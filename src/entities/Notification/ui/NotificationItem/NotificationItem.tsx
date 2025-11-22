@@ -13,14 +13,22 @@ export const NotificationItem = (props: NotificationItemProps) => {
     const { className, item } = props;
 
     const content = (
-        <Card theme={CardTheme.OUTLINED} className={classNames(cls.NotificationItem, {}, [className])}>
+        <Card
+            theme={CardTheme.OUTLINED}
+            className={classNames(cls.NotificationItem, {}, [className])}
+        >
             <Text title={item.title} text={item.description} />
         </Card>
     );
 
     if (item.href) {
         return (
-            <a className={cls.link} target="_blank" href={item.href} rel="noreferrer">
+            <a
+                className={cls.link}
+                target="_blank"
+                href={item.href}
+                rel="noreferrer"
+            >
                 {content}
             </a>
         );

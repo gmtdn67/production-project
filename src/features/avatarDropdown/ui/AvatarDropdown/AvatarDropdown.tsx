@@ -5,9 +5,15 @@ import { Avatar } from '@/shared/ui/Avatar';
 import { Dropdown } from '@/shared/ui/Popups';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import {
-    getUserAuthData, isUserAdmin, isUserManager, userActions,
+    getUserAuthData,
+    isUserAdmin,
+    isUserManager,
+    userActions,
 } from '@/entities/User';
-import { getRouteAdminPanel, getRouteProfile } from '@/shared/config/routeConfig/routeConfig';
+import {
+    getRouteAdminPanel,
+    getRouteProfile,
+} from '@/shared/config/routeConfig/routeConfig';
 
 interface AvatarDropdownProps {
     className?: string;
@@ -35,10 +41,14 @@ export const AvatarDropdown = ({ className }: AvatarDropdownProps) => {
             direction="bottom left"
             className={classNames('', {}, [className])}
             items={[
-                ...(isAdminPanelAvailable ? [{
-                    content: t('Панель администратора'),
-                    href: getRouteAdminPanel(),
-                }] : []),
+                ...(isAdminPanelAvailable
+                    ? [
+                          {
+                              content: t('Панель администратора'),
+                              href: getRouteAdminPanel(),
+                          },
+                      ]
+                    : []),
 
                 {
                     content: t('Профиль пользователя'),
@@ -49,7 +59,9 @@ export const AvatarDropdown = ({ className }: AvatarDropdownProps) => {
                     onClick: onLogout,
                 },
             ]}
-            trigger={<Avatar fallbackInverted src={authData.avatar} size={30} />}
+            trigger={
+                <Avatar fallbackInverted src={authData.avatar} size={30} />
+            }
         />
     );
 };

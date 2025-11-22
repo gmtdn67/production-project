@@ -1,14 +1,10 @@
 import { useTranslation } from 'react-i18next';
 import { memo, useCallback, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import {
-    Button, ButtonTheme,
-} from '@/shared/ui/Button';
+import { Button, ButtonTheme } from '@/shared/ui/Button';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { LoginModal } from '@/features/AuthByUsername';
-import {
-    getUserAuthData, isUserAdmin, isUserManager,
-} from '@/entities/User';
+import { getUserAuthData, isUserAdmin, isUserManager } from '@/entities/User';
 import { NotificationButton } from '@/features/notificationButton';
 import { AvatarDropdown } from '@/features/avatarDropdown';
 import cls from './Navbar.module.scss';
@@ -42,7 +38,11 @@ export const Navbar = memo(({ className }: NavbarProps) => {
     if (authData) {
         return (
             <header className={classNames(cls.Navbar, {}, [className])}>
-                <Text className={cls.appName} title={t('Мое приложение')} theme={TextTheme.INVERTED} />
+                <Text
+                    className={cls.appName}
+                    title={t('Мое приложение')}
+                    theme={TextTheme.INVERTED}
+                />
                 <AppLink
                     to={getRouteArticleCreate()}
                     theme={AppLinkTheme.SECONDARY}
@@ -68,10 +68,7 @@ export const Navbar = memo(({ className }: NavbarProps) => {
                 {t('Войти')}
             </Button>
             {isAuthModal && (
-                <LoginModal
-                    isOpen={isAuthModal}
-                    onClose={onCloseModal}
-                />
+                <LoginModal isOpen={isAuthModal} onClose={onCloseModal} />
             )}
         </header>
     );

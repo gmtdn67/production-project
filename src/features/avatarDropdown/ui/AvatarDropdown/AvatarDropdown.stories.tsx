@@ -9,7 +9,9 @@ export default {
     },
 } as ComponentMeta<typeof AvatarDropdown>;
 
-const Template: ComponentStory<typeof AvatarDropdown> = () => <AvatarDropdown />;
+const Template: ComponentStory<typeof AvatarDropdown> = () => (
+    <AvatarDropdown />
+);
 
 export const Normal = Template.bind({});
 Normal.args = {};

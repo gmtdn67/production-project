@@ -10,11 +10,13 @@ interface ArticleEditPageProps {
 
 const ArticleEditPage = ({ className }: ArticleEditPageProps) => {
     const { t } = useTranslation();
-    const { id } = useParams<{id: string}>();
+    const { id } = useParams<{ id: string }>();
     const isEdit = Boolean(id);
     return (
         <Page className={classNames(cls.ArticleEditPage, {}, [className])}>
-            { isEdit ? t('Редактирование статьи с ID=') + id : t('Создание новой статьи')}
+            {isEdit
+                ? t('Редактирование статьи с ID=') + id
+                : t('Создание новой статьи')}
         </Page>
     );
 };

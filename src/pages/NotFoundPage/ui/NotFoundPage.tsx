@@ -3,14 +3,17 @@ import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './NotFoundPage.module.scss';
 import { TestProps } from '@/shared/types/tests';
 
-interface NotFoundPageProps extends TestProps{
+interface NotFoundPageProps extends TestProps {
     className?: string;
 }
 
 export const NotFoundPage = ({ className }: NotFoundPageProps) => {
     const { t } = useTranslation();
     return (
-        <div data-testid="NotFoundPage" className={classNames(cls.NotFoundPage, {}, [className])}>
+        <div
+            data-testid="NotFoundPage"
+            className={classNames(cls.NotFoundPage, {}, [className])}
+        >
             {t('Страница не найдена')}
         </div>
     );

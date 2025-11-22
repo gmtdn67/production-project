@@ -5,14 +5,18 @@ import { Text, TextTheme } from '@/shared/ui/Text';
 import { ArticleList } from '@/entities/Article';
 import { getArticles } from '../../model/slices/articlesPageSlice';
 import {
-    getArticlesPageError, getArticlesPageIsLoading, getArticlesPageView,
+    getArticlesPageError,
+    getArticlesPageIsLoading,
+    getArticlesPageView,
 } from '../../model/selectors/articlesPageSelectors';
 
 interface ArticlesInfiniteListProps {
     className?: string;
 }
 
-export const ArticlesInfiniteList = ({ className }: ArticlesInfiniteListProps) => {
+export const ArticlesInfiniteList = ({
+    className,
+}: ArticlesInfiniteListProps) => {
     const { t } = useTranslation();
     const articles = useSelector(getArticles.selectAll);
     const isLoading = useSelector(getArticlesPageIsLoading);
@@ -21,7 +25,12 @@ export const ArticlesInfiniteList = ({ className }: ArticlesInfiniteListProps) =
     const [searchParams] = useSearchParams();
 
     if (error) {
-        return <Text text={t('Ошибка при загрузке статей')} theme={TextTheme.ERROR} />;
+        return (
+            <Text
+                text={t('Ошибка при загрузке статей')}
+                theme={TextTheme.ERROR}
+            />
+        );
     }
 
     return (

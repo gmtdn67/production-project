@@ -8,13 +8,18 @@ import { getUserAuthData } from '@/entities/User';
 import { getArticleDetailsData } from '@/entities/Article';
 import { getCanEditArticle } from '../../../model/selectors/article';
 import { HStack } from '@/shared/ui/Stack';
-import { getRouteArticleEdit, getRouteArticles } from '@/shared/config/routeConfig/routeConfig';
+import {
+    getRouteArticleEdit,
+    getRouteArticles,
+} from '@/shared/config/routeConfig/routeConfig';
 
 interface ArticleDetailsPageHeaderProps {
     className?: string;
 }
 
-export const ArticleDetailsPageHeader = ({ className }: ArticleDetailsPageHeaderProps) => {
+export const ArticleDetailsPageHeader = ({
+    className,
+}: ArticleDetailsPageHeaderProps) => {
     const { t } = useTranslation('article-details');
     const navigate = useNavigate();
     const userData = useSelector(getUserAuthData);
@@ -32,7 +37,11 @@ export const ArticleDetailsPageHeader = ({ className }: ArticleDetailsPageHeader
     }, [navigate, article]);
 
     return (
-        <HStack max justify="between" className={classNames('', {}, [className])}>
+        <HStack
+            max
+            justify="between"
+            className={classNames('', {}, [className])}
+        >
             <Button theme={ButtonTheme.OUTLINE} onClick={onBackToList}>
                 {t('Назад к списку')}
             </Button>
