@@ -23,10 +23,11 @@ const reducers: ReducersList = {
 const ArticlesPage = (props: ArticlesPageProps) => {
     const { className } = props;
     const dispatch = useAppDispatch();
-
     const onLoadNextPart = useCallback(() => {
         dispatch(fetchNextArticlesPage());
     }, [dispatch]);
+
+    console.log(data)
 
     return (
         <DynamicModuleLoader reducers={reducers} removeAfterUnmount={false}>
