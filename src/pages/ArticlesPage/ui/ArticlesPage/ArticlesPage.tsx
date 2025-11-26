@@ -27,8 +27,6 @@ const ArticlesPage = (props: ArticlesPageProps) => {
         dispatch(fetchNextArticlesPage());
     }, [dispatch]);
 
-    console.log(data)
-
     return (
         <DynamicModuleLoader reducers={reducers} removeAfterUnmount={false}>
             <Page
