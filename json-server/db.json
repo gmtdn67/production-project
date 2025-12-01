@@ -774,7 +774,8 @@
       },
       "avatar": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Anonymous_emblem.svg",
       "jsonSettings": {
-        "theme": "app_dark_theme"
+        "theme": "app_light_theme",
+        "isArticlesPageWasOpened": true
       }
     },
     {
@@ -792,7 +793,8 @@
       "jsonSettings": {
         "theme": "app_dark_theme",
         "isFirstVisit": true,
-        "settingsPageHasBeenOpen": false
+        "settingsPageHasBeenOpen": false,
+        "isArticlesPageWasOpened": true
       }
     },
     {
@@ -810,7 +812,8 @@
       "jsonSettings": {
         "theme": "app_dark_theme",
         "isFirstVisit": true,
-        "settingsPageHasBeenOpen": false
+        "settingsPageHasBeenOpen": false,
+        "isArticlesPageWasOpened": true
       }
     },
     {
