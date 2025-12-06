@@ -770,11 +770,12 @@
       ],
       "features": {
         "isArticleRatingEnabled": true,
-        "isCounterEnabled": true
+        "isCounterEnabled": true,
+        "isAppRedesigned": true
       },
       "avatar": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Anonymous_emblem.svg",
       "jsonSettings": {
-        "theme": "app_light_theme",
+        "theme": "app_dark_theme",
         "isArticlesPageWasOpened": true
       }
     },
@@ -791,7 +792,7 @@
       },
       "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg",
       "jsonSettings": {
-        "theme": "app_dark_theme",
+        "theme": "app_light_theme",
         "isFirstVisit": true,
         "settingsPageHasBeenOpen": false,
         "isArticlesPageWasOpened": true

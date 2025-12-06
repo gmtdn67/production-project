@@ -9,6 +9,7 @@ interface ToggleFeaturesProps {
 }
 
 export const ToggleFeatures = memo((props: ToggleFeaturesProps) => {
+    // eslint-disable-next-line react/prop-types
     const { feature, on, off } = props;
     
     if (getFeatureFlag(feature)) {
