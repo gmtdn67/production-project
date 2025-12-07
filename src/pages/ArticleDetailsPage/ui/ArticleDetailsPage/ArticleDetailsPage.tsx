@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { memo } from 'react';
 import { useParams } from 'react-router-dom';
-import { VStack } from '@/shared/ui/Stack';
+import { VStack } from '@/shared/ui/deprecated/Stack';
 import { ArticleDetails } from '@/entities/Article';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import {
@@ -19,7 +19,7 @@ import {
     getFeatureFlag,
     ToggleFeatures,
 } from '@/shared/lib/features';
-import { Card } from '@/shared/ui/Card';
+import { Card } from '@/shared/ui/deprecated/Card';
 
 interface ArticleDetailsPageProps {
     className?: string;

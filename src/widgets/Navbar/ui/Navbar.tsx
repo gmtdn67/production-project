@@ -1,16 +1,16 @@
 import { useTranslation } from 'react-i18next';
 import { memo, useCallback, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Button, ButtonTheme } from '@/shared/ui/Button';
+import { Button, ButtonTheme } from '@/shared/ui/deprecated/Button';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { LoginModal } from '@/features/AuthByUsername';
 import { getUserAuthData, isUserAdmin, isUserManager } from '@/entities/User';
 import { NotificationButton } from '@/features/notificationButton';
 import { AvatarDropdown } from '@/features/avatarDropdown';
 import cls from './Navbar.module.scss';
-import { AppLink, AppLinkTheme } from '@/shared/ui/AppLink';
-import { HStack } from '@/shared/ui/Stack';
-import { TextTheme, Text } from '@/shared/ui/Text';
+import { AppLink, AppLinkTheme } from '@/shared/ui/deprecated/AppLink';
+import { HStack } from '@/shared/ui/deprecated/Stack';
+import { TextTheme, Text } from '@/shared/ui/deprecated/Text';
 import { getRouteArticleCreate } from '@/shared/config/routeConfig/routeConfig';
 import { ToggleFeatures } from '@/shared/lib/features';
 
@@ -41,7 +41,11 @@ export const Navbar = memo(({ className }: NavbarProps) => {
             <ToggleFeatures
                 feature="isAppRedesigned"
                 on={
-                    <header className={classNames(cls.NavbarRedesigned, {}, [className])}>
+                    <header
+                        className={classNames(cls.NavbarRedesigned, {}, [
+                            className,
+                        ])}
+                    >
                         <HStack gap="16" className={cls.actions}>
                             <NotificationButton />
                             <AvatarDropdown />

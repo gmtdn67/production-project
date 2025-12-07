@@ -19,11 +19,11 @@ import {
 } from '../../model/selectors/articleDetails';
 import { ArticleBlock } from '../../model/types/article';
 import { ArticleBlockType } from '../../model/consts/consts';
-import { Skeleton } from '@/shared/ui/Skeleton';
-import { Text, TextAlign, TextSize } from '@/shared/ui/Text';
-import { HStack, VStack } from '@/shared/ui/Stack';
-import { Avatar } from '@/shared/ui/Avatar';
-import { Icon } from '@/shared/ui/Icon';
+import { Skeleton } from '@/shared/ui/deprecated/Skeleton';
+import { Text, TextAlign, TextSize } from '@/shared/ui/deprecated/Text';
+import { HStack, VStack } from '@/shared/ui/deprecated/Stack';
+import { Avatar } from '@/shared/ui/deprecated/Avatar';
+import { Icon } from '@/shared/ui/deprecated/Icon';
 import { ArticleCodeBlockComponent } from '../ArticleCodeBlockComponent/ArticleCodeBlockComponent';
 import { ArticleImageBlockComponent } from '../ArticleImageBlockComponent/ArticleImageBlockComponent';
 import { ArticleTextBlockComponent } from '../ArticleTextBlockComponent/ArticleTextBlockComponent';

@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { Suspense, useCallback } from 'react';
-import { TextSize, Text } from '@/shared/ui/Text';
+import { TextSize, Text } from '@/shared/ui/deprecated/Text';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { AddCommentForm } from '@/features/addCommentForm';
 import { CommentList } from '@/entities/Comment';
@@ -10,8 +10,8 @@ import { getArticleComments } from '../../model/slices/articleDetailsCommentsSli
 import { getArticleCommentsIsLoading } from '../../model/selectors/comments';
 import { addCommentForArticle } from '../../model/services/addCommentForArticle/addCommentForArticle';
 import { fetchCommentsByArticleId } from '../../model/services/fetchCommentsByArticleId/fetchCommentsByArticleId';
-import { VStack } from '@/shared/ui/Stack';
-import { Loader } from '@/shared/ui/Loader';
+import { VStack } from '@/shared/ui/deprecated/Stack';
+import { Loader } from '@/shared/ui/deprecated/Loader';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
 
 interface ArticleDetailsCommentsProps {

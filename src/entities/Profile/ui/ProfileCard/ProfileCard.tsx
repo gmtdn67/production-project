@@ -4,11 +4,11 @@ import { Country, CountrySelect } from '@/entities/Country';
 import { classNames, Mods } from '@/shared/lib/classNames/classNames';
 import cls from './ProfileCard.module.scss';
 import { Profile } from '../../model/types/profile';
-import { HStack, VStack } from '@/shared/ui/Stack';
-import { Loader } from '@/shared/ui/Loader';
-import { TextTheme, Text, TextAlign } from '@/shared/ui/Text';
-import { Avatar } from '@/shared/ui/Avatar';
-import { Input } from '@/shared/ui/Input';
+import { HStack, VStack } from '@/shared/ui/deprecated/Stack';
+import { Loader } from '@/shared/ui/deprecated/Loader';
+import { TextTheme, Text, TextAlign } from '@/shared/ui/deprecated/Text';
+import { Avatar } from '@/shared/ui/deprecated/Avatar';
+import { Input } from '@/shared/ui/deprecated/Input';
 
 interface ProfileCardProps {
     className?: string;
