@@ -1,11 +1,18 @@
 import { memo, useCallback } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { useTheme } from '@/shared/lib/hooks/useTheme/useTheme';
-import ThemeIcon from '@/shared/assets/icons/SwapTheme.svg'
-import { Button, ButtonTheme } from '@/shared/ui/deprecated/Button/Button';
+import ThemeIconDeprecated from '@/shared/assets/icons/theme-light.svg';
+import ThemeIcon from '@/shared/assets/icons/theme.svg';
+import {
+    Button as ButtonDeprecated,
+    ButtonTheme,
+} from '@/shared/ui/deprecated/Button/Button';
 import { saveJsonSettings } from '@/entities/User';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
-import { Icon } from '@/shared/ui/deprecated/Icon';
+import { Icon as IconDeprecated } from '@/shared/ui/deprecated/Icon';
+import { ToggleFeatures } from '@/shared/lib/features';
+import { Button } from '@/shared/ui/redesigned/Button';
+import { Icon } from '@/shared/ui/redesigned/Icon';
 
 interface ThemeSwitcherProps {
     className?: string;
@@ -14,19 +21,38 @@ interface ThemeSwitcherProps {
 export const ThemeSwitcher = memo(({ className }: ThemeSwitcherProps) => {
     const { theme, toggleTheme } = useTheme();
     const dispatch = useAppDispatch();
-    const onToggleHandler = useCallback( () => {
+    const onToggleHandler = useCallback(() => {
         toggleTheme((newTheme) => {
-            dispatch(saveJsonSettings({theme: newTheme}))
-        })
-    }, [dispatch, toggleTheme])
-    
+            dispatch(saveJsonSettings({ theme: newTheme }));
+        });
+    }, [dispatch, toggleTheme]);
+
     return (
-        <Button
-            theme={ButtonTheme.CLEAR}
-            className={classNames('', {}, [className])}
-            onClick={onToggleHandler}
-        >
-            <Icon Svg={ThemeIcon} width={40} height={40} inverted/>
-        </Button>
+        <ToggleFeatures
+            feature="isAppRedesigned"
+            on={
+                <Icon
+                    Svg={ThemeIcon}
+                    width={40}
+                    height={40}
+                    clickable
+                    onClick={onToggleHandler}
+                />
+            }
+            off={
+                <ButtonDeprecated
+                    theme={ButtonTheme.CLEAR}
+                    className={classNames('', {}, [className])}
+                    onClick={onToggleHandler}
+                >
+                    <IconDeprecated
+                        Svg={ThemeIconDeprecated}
+                        width={40}
+                        height={40}
+                        inverted
+                    />
+                </ButtonDeprecated>
+            }
+        />
     );
 });

@@ -9,7 +9,7 @@ module.exports = {
         'airbnb',
         'plugin:i18next/recommended',
         'plugin:storybook/recommended',
-        'prettier'
+        'prettier',
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
@@ -28,7 +28,7 @@ module.exports = {
         'unused-imports',
     ],
     rules: {
-        "unused-imports/no-unused-imports": "error",
+        'unused-imports/no-unused-imports': 'error',
         'react/jsx-filename-extension': [
             2,
             { extensions: ['.js', '.jsx', '.tsx'] },
@@ -38,7 +38,7 @@ module.exports = {
         'no-unused-vars': 'off',
         'react/require-default-props': 'off',
         'react/react-in-jsx-scope': 'off',
-        "react/jsx-max-props-per-line": ['error', {"maximum": 4}],
+        'react/jsx-max-props-per-line': ['error', { maximum: 4 }],
         'react/no-unstable-nested-components': 'warn',
         'react/jsx-props-no-spreading': 'warn',
         'react/function-component-definition': 'off',
@@ -50,7 +50,21 @@ module.exports = {
             'error',
             {
                 markupOnly: true,
-                ignoreAttribute: ['as', 'data-testid', 'to', 'target', 'justify', 'align', 'direction', 'gap', 'role', 'border', 'feature'],
+                ignoreAttribute: [
+                    'as',
+                    'data-testid',
+                    'to',
+                    'target',
+                    'justify',
+                    'align',
+                    'direction',
+                    'gap',
+                    'role',
+                    'border',
+                    'feature',
+                    'color',
+                    'variant'
+                ],
             },
         ],
         'max-len': ['error', { ignoreComments: true, code: 140 }],
@@ -66,7 +80,11 @@ module.exports = {
             'error',
             {
                 alias: '@',
-                testFilesPatterns: ['**/*.test.*', '**/StoreDecorator.tsx', '**/*.story.*'],
+                testFilesPatterns: [
+                    '**/*.test.*',
+                    '**/StoreDecorator.tsx',
+                    '**/*.story.*',
+                ],
             },
         ],
         'gmt9n-plugin/layer-imports': [
