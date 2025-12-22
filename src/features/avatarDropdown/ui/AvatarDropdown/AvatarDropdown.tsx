@@ -60,35 +60,16 @@ export const AvatarDropdown = ({ className }: AvatarDropdownProps) => {
     ];
 
     return (
-        <ToggleFeatures
-            feature="isAppRedesigned"
-            on={
-                <Dropdown
-                    direction="bottom left"
-                    className={classNames('', {}, [className])}
-                    items={items}
-                    trigger={
-                        <Avatar
-                            src={authData.avatar}
-                            size={40}
+        <Dropdown
+                            direction="bottom left"
+                            className={classNames('', {}, [className])}
+                            items={items}
+                            trigger={
+                                <Avatar
+                                    src={authData.avatar}
+                                    size={40}
+                                />
+                            }
                         />
-                    }
-                />
-            }
-            off={
-                <DropdownDeprecated
-                    direction="bottom left"
-                    className={classNames('', {}, [className])}
-                    items={items}
-                    trigger={
-                        <AvatarDeprecated
-                            fallbackInverted
-                            src={authData.avatar}
-                            size={30}
-                        />
-                    }
-                />
-            }
-        />
     );
 };

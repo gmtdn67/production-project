@@ -28,31 +28,12 @@ export const ThemeSwitcher = memo(({ className }: ThemeSwitcherProps) => {
     }, [dispatch, toggleTheme]);
 
     return (
-        <ToggleFeatures
-            feature="isAppRedesigned"
-            on={
-                <Icon
-                    Svg={ThemeIcon}
-                    width={40}
-                    height={40}
-                    clickable
-                    onClick={onToggleHandler}
-                />
-            }
-            off={
-                <ButtonDeprecated
-                    theme={ButtonTheme.CLEAR}
-                    className={classNames('', {}, [className])}
-                    onClick={onToggleHandler}
-                >
-                    <IconDeprecated
-                        Svg={ThemeIconDeprecated}
-                        width={40}
-                        height={40}
-                        inverted
-                    />
-                </ButtonDeprecated>
-            }
-        />
+        <Icon
+                            Svg={ThemeIcon}
+                            width={40}
+                            height={40}
+                            clickable
+                            onClick={onToggleHandler}
+                        />
     );
 });
