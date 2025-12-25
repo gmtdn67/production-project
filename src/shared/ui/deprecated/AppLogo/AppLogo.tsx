@@ -13,13 +13,13 @@ interface AppLogoProps {
  * @deprecated
  */
 export const AppLogo = memo(({ className }: AppLogoProps) => (
-        <HStack
-            max
-            justify="center"
-            className={classNames(cls.appLogoWrapper, {}, [className])}
-        >
-            <div className={cls.gradientBig} />
-            <div className={cls.gradientSmall} />
-            <AppSvg className={cls.appLogo} width={60} height={80}/>
-        </HStack>
-    ));
+    <HStack
+        max
+        justify="center"
+        className={classNames(cls.appLogoWrapper, {}, [className])}
+    >
+        <AppSvg className={cls.appLogo} width={60} height={80} color='black'/>
+        <div className={cls.gradientBig} />
+        <div className={cls.gradientSmall} />
+    </HStack>
+));
