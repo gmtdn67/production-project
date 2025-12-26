@@ -9,7 +9,7 @@ export {
     ArticleSortField,
     ArticleType,
     ArticleBlockType,
-} from './model/consts/consts';
+} from './model/consts/articleConsts';
 
 export type { ArticleDetailsSchema } from './model/types/articleDetailsSchema';
 

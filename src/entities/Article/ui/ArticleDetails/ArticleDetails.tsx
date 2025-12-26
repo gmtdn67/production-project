@@ -18,7 +18,7 @@ import {
     getArticleDetailsIsLoading,
 } from '../../model/selectors/articleDetails';
 import { ArticleBlock } from '../../model/types/article';
-import { ArticleBlockType } from '../../model/consts/consts';
+import { ArticleBlockType } from '../../model/consts/articleConsts';
 import { Skeleton } from '@/shared/ui/deprecated/Skeleton';
 import { Text, TextAlign, TextSize } from '@/shared/ui/deprecated/Text';
 import { HStack, VStack } from '@/shared/ui/deprecated/Stack';

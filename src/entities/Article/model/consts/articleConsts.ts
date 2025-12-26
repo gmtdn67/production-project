@@ -9,6 +9,7 @@ export enum ArticleBlockType {
     IMAGE = 'IMAGE',
     TEXT = 'TEXT',
 }
+
 export enum ArticleType {
     ALL = 'ALL',
     IT = 'IT',
