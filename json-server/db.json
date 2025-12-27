@@ -33,24 +33,12 @@
       "userId": "2"
     }
   ],
-  "posts": [
-    {
-      "id": "1",
-      "title": "json-server",
-      "userId": "1"
-    },
-    {
-      "id": "2",
-      "title": "json-server",
-      "userId": "2"
-    }
-  ],
   "articles": [
     {
       "id": "1",
       "title": "Javascript news СВЕЖАЯ",
       "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://teknotower.com/wp-content/uploads/2020/11/js.png",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png",
       "views": 1022,
       "createdAt": "26.04.2022",
       "userId": "1",
@@ -122,7 +110,7 @@
       "id": "2",
       "title": "Python news",
       "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG7cdzSCetx-lHYB2xT1sFoy2wwYbZ_21_ug&s",
+      "img": "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs2/113415626/original/a17667d573bf34559bf0d35993ed76e57d43ad00/program-python-scripts-for-automation-and-data-mining.png",
       "views": 5204,
       "createdAt": "26.02.2022",
       "userId": "1",
@@ -170,7 +158,7 @@
       "id": "4",
       "title": "Scala news",
       "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://coursefreedl.com/wp-content/uploads/2020/01/Scala-Zero-To-Hero-Complete-Guide.jpg",
+      "img": "https://pluspng.com/img-png/scala-logo-png-scala-logo-1200x675.png",
       "views": 10222,
       "createdAt": "24.01.2022",
       "userId": "1",
@@ -194,7 +182,7 @@
       "id": "5",
       "title": "Golang news",
       "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://cdn-front.kwork.ru/pics/t3/88/16350941-1630390388.jpg",
+      "img": "https://www.itsec.ru/hs-fs/hubfs/ISR/Golang.png?width=750&name=Golang.png",
       "views": 10222,
       "createdAt": "26.02.2020",
       "userId": "1",
@@ -314,7 +302,7 @@
       "id": "10",
       "title": "Python news",
       "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG7cdzSCetx-lHYB2xT1sFoy2wwYbZ_21_ug&s",
+      "img": "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs2/113415626/original/a17667d573bf34559bf0d35993ed76e57d43ad00/program-python-scripts-for-automation-and-data-mining.png",
       "views": 1022,
       "createdAt": "26.02.2022",
       "userId": "1",
@@ -362,7 +350,7 @@
       "id": "12",
       "title": "Python news",
       "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG7cdzSCetx-lHYB2xT1sFoy2wwYbZ_21_ug&s",
+      "img": "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs2/113415626/original/a17667d573bf34559bf0d35993ed76e57d43ad00/program-python-scripts-for-automation-and-data-mining.png",
       "views": 1022,
       "createdAt": "26.02.2022",
       "userId": "1",
@@ -410,7 +398,7 @@
       "id": "14",
       "title": "Python news",
       "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG7cdzSCetx-lHYB2xT1sFoy2wwYbZ_21_ug&s",
+      "img": "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs2/113415626/original/a17667d573bf34559bf0d35993ed76e57d43ad00/program-python-scripts-for-automation-and-data-mining.png",
       "views": 1022,
       "createdAt": "26.02.2022",
       "userId": "1",
@@ -458,7 +446,7 @@
       "id": "16",
       "title": "Python news",
       "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG7cdzSCetx-lHYB2xT1sFoy2wwYbZ_21_ug&s",
+      "img": "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs2/113415626/original/a17667d573bf34559bf0d35993ed76e57d43ad00/program-python-scripts-for-automation-and-data-mining.png",
       "views": 1022,
       "createdAt": "26.02.2022",
       "userId": "1",
@@ -530,7 +518,7 @@
       "id": "18",
       "title": "Научная статья - Биология",
       "subtitle": "БиологиЯ",
-      "img": "https://avatars.mds.yandex.net/get-zen_doc/2746556/pub_5f50dd7e1a1ddf4776aa5569_5f50decd2506f211d1de6284/scale_1200",
+      "img": "https://kartinkin.net/uploads/posts/2022-05/1652214942_9-kartinkin-net-p-biologiya-krasivie-kartinki-10.jpg",
       "views": 1022,
       "createdAt": "26.02.2022",
       "userId": "1",
@@ -553,7 +541,7 @@
     {
       "title": "Научная статья - Биология",
       "subtitle": "БиологиЯ",
-      "img": "https://avatars.mds.yandex.net/get-zen_doc/2746556/pub_5f50dd7e1a1ddf4776aa5569_5f50decd2506f211d1de6284/scale_1200",
+      "img": "https://kartinkin.net/uploads/posts/2022-05/1652214942_9-kartinkin-net-p-biologiya-krasivie-kartinki-10.jpg",
       "views": 1022,
       "createdAt": "26.02.2022",
       "userId": "1",
@@ -561,12 +549,12 @@
         "SCIENCE"
       ],
       "blocks": [],
-      "id": "FoKotj4"
+      "id": "guOLlgD"
     },
     {
       "title": "Научная статья - Биология",
       "subtitle": "БиологиЯ",
-      "img": "https://avatars.mds.yandex.net/get-zen_doc/2746556/pub_5f50dd7e1a1ddf4776aa5569_5f50decd2506f211d1de6284/scale_1200",
+      "img": "https://i.ebayimg.com/00/s/NjE0WDc2OA==/z/PhIAAOSw~oFZvBcK/$_57.JPG?set_id=8800005007",
       "views": 1022,
       "createdAt": "26.02.2022",
       "userId": "1",
@@ -574,98 +562,7 @@
         "SCIENCE"
       ],
       "blocks": [],
-      "id": "t0X0Rs2"
-    },
-    {
-      "title": "Научная статья - Биология",
-      "subtitle": "БиологиЯ",
-      "img": "https://avatars.mds.yandex.net/get-zen_doc/2746556/pub_5f50dd7e1a1ddf4776aa5569_5f50decd2506f211d1de6284/scale_1200",
-      "views": 1022,
-      "createdAt": "26.02.2022",
-      "userId": "1",
-      "type": [
-        "SCIENCE"
-      ],
-      "blocks": [],
-      "id": "2vjCFVl"
-    },
-    {
-      "title": "Testing article",
-      "subtitle": "БиологиЯ",
-      "img": "https://avatars.mds.yandex.net/get-zen_doc/2746556/pub_5f50dd7e1a1ddf4776aa5569_5f50decd2506f211d1de6284/scale_1200",
-      "views": 1022,
-      "createdAt": "26.02.2022",
-      "userId": "1",
-      "type": [
-        "SCIENCE"
-      ],
-      "blocks": [],
-      "id": "EtMdEJM"
-    },
-    {
-      "title": "Testing article",
-      "subtitle": "БиологиЯ",
-      "img": "https://avatars.mds.yandex.net/get-zen_doc/2746556/pub_5f50dd7e1a1ddf4776aa5569_5f50decd2506f211d1de6284/scale_1200",
-      "views": 1022,
-      "createdAt": "26.02.2022",
-      "userId": "1",
-      "type": [
-        "SCIENCE"
-      ],
-      "blocks": [],
-      "id": "0IYW7Nt"
-    },
-    {
-      "title": "Testing article",
-      "subtitle": "БиологиЯ",
-      "img": "https://avatars.mds.yandex.net/get-zen_doc/2746556/pub_5f50dd7e1a1ddf4776aa5569_5f50decd2506f211d1de6284/scale_1200",
-      "views": 1022,
-      "createdAt": "26.02.2022",
-      "userId": "1",
-      "type": [
-        "SCIENCE"
-      ],
-      "blocks": [],
-      "id": "o-i5xUB"
-    },
-    {
-      "title": "Testing article",
-      "subtitle": "БиологиЯ",
-      "img": "https://avatars.mds.yandex.net/get-zen_doc/2746556/pub_5f50dd7e1a1ddf4776aa5569_5f50decd2506f211d1de6284/scale_1200",
-      "views": 1022,
-      "createdAt": "26.02.2022",
-      "userId": "1",
-      "type": [
-        "SCIENCE"
-      ],
-      "blocks": [],
-      "id": "ag3u5gZ"
-    },
-    {
-      "title": "Testing article",
-      "subtitle": "БиологиЯ",
-      "img": "https://avatars.mds.yandex.net/get-zen_doc/2746556/pub_5f50dd7e1a1ddf4776aa5569_5f50decd2506f211d1de6284/scale_1200",
-      "views": 1022,
-      "createdAt": "26.02.2022",
-      "userId": "1",
-      "type": [
-        "SCIENCE"
-      ],
-      "blocks": [],
-      "id": "LFE3iIW"
-    },
-    {
-      "title": "Testing article",
-      "subtitle": "БиологиЯ",
-      "img": "https://avatars.mds.yandex.net/get-zen_doc/2746556/pub_5f50dd7e1a1ddf4776aa5569_5f50decd2506f211d1de6284/scale_1200",
-      "views": 1022,
-      "createdAt": "26.02.2022",
-      "userId": "1",
-      "type": [
-        "SCIENCE"
-      ],
-      "blocks": [],
-      "id": "r6Wgmhz"
+      "id": "6f91vPH"
     }
   ],
   "comments": [
