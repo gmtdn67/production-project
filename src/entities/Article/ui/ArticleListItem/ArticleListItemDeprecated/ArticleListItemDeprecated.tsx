@@ -15,9 +15,9 @@ import { AppImage } from '@/shared/ui/redesigned/AppImage';
 import { Skeleton } from '@/shared/ui/deprecated/Skeleton';
 import { ArticleTextBlockComponent } from '../../ArticleTextBlockComponent/ArticleTextBlockComponent';
 import { AppLink } from '@/shared/ui/deprecated/AppLink';
-import { getRouteArticleDetails } from '@/shared/const/router';
 import { Button, ButtonTheme } from '@/shared/ui/deprecated/Button';
 import { ArticleListItemProps } from '../ArticleListItem';
+import { getRouteArticleDetails } from '@/shared/config/routeConfig/routeConfig';
 
 export const ArticleListItemDeprecated = memo((props: ArticleListItemProps) => {
     const { className, article, view, target } = props;

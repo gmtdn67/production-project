@@ -12,13 +12,13 @@ import { Avatar } from '@/shared/ui/redesigned/Avatar';
 import { AppImage } from '@/shared/ui/redesigned/AppImage';
 import { Skeleton } from '@/shared/ui/redesigned/Skeleton';
 import { AppLink } from '@/shared/ui/redesigned/AppLink';
-import { getRouteArticleDetails } from '@/shared/const/router';
 import { Button } from '@/shared/ui/redesigned/Button';
 import { HStack, VStack } from '@/shared/ui/redesigned/Stack';
 import {
     ArticleBlockType,
     ArticleView,
 } from '../../../model/consts/articleConsts';
+import { getRouteArticleDetails } from '@/shared/config/routeConfig/routeConfig';
 
 export const ArticleListItemRedesigned = memo((props: ArticleListItemProps) => {
     const { className, article, view, target } = props;
