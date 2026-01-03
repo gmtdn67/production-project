@@ -3,12 +3,12 @@ import { Listbox as HListBox } from '@headlessui/react';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { DropdownDirection } from '@/shared/types/ui';
 import { HStack } from '../../../../redesigned/Stack';
+import { Button } from '../../../Button/Button';
 import cls from './ListBox.module.scss';
 import { mapDirectionClass } from '../../styles/consts';
 import popupCls from '../../styles/popup.module.scss';
-import { Button } from '../../../../redesigned/Button'
-import { Icon } from '../../../Icon';
 import ArrowIcon from '@/shared/assets/icons/arrow-bottom.svg';
+import { Icon } from '../../../Icon';
 
 export interface ListBoxItem<T extends string> {
     value: string;
@@ -41,7 +41,9 @@ export function ListBox<T extends string>(props: ListBoxProps<T>) {
 
     const optionsClasses = [mapDirectionClass[direction], popupCls.menu];
 
-    const selectedItem = useMemo(() => items?.find((item) => item.value === value), [items, value]);
+    const selectedItem = useMemo(() => {
+        return items?.find((item) => item.value === value);
+    }, [items, value]);
 
     return (
         <HStack gap="4">
@@ -57,7 +59,11 @@ export function ListBox<T extends string>(props: ListBoxProps<T>) {
                 onChange={onChange}
             >
                 <HListBox.Button disabled={readonly} className={cls.trigger}>
-                    <Button variant="filled" disabled={readonly} addonRight={<Icon Svg={ArrowIcon}/>}>
+                    <Button
+                        variant="filled"
+                        disabled={readonly}
+                        addonRight={<Icon Svg={ArrowIcon} />}
+                    >
                         {selectedItem?.content ?? defaultValue}
                     </Button>
                 </HListBox.Button>

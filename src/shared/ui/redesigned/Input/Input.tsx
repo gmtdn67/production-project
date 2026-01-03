@@ -16,7 +16,7 @@ type HTMLInputProps = Omit<
     'value' | 'onChange' | 'readOnly' | 'size'
 >;
 
-type InputSize = 's' | 'm' | 'l'
+type InputSize = 's' | 'm' | 'l';
 
 interface InputProps extends HTMLInputProps {
     className?: string;
@@ -75,7 +75,12 @@ export const Input = memo((props: InputProps) => {
     };
 
     const input = (
-        <div className={classNames(cls.InputWrapper, mods, [className, cls[size]])}>
+        <div
+            className={classNames(cls.InputWrapper, mods, [
+                className,
+                cls[size],
+            ])}
+        >
             <div className={cls.addonLeft}>{addonLeft}</div>
             <input
                 ref={ref}

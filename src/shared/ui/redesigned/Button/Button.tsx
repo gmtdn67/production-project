@@ -3,6 +3,7 @@ import { classNames, Mods } from '@/shared/lib/classNames/classNames';
 import cls from './Button.module.scss';
 
 export type ButtonVariant = 'clear' | 'outline' | 'filled';
+
 export type ButtonSize = 'm' | 'l' | 'xl';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -31,6 +32,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
      * Увеличивает кнопку на всю свободную ширину
      */
     fullWidth?: boolean;
+
     addonLeft?: ReactNode;
     addonRight?: ReactNode;
 }
@@ -43,9 +45,9 @@ export const Button = memo((props: ButtonProps) => {
         square,
         disabled,
         fullWidth,
+        size = 'm',
         addonLeft,
         addonRight,
-        size = 'm',
         ...otherProps
     } = props;
 

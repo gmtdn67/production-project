@@ -52,7 +52,11 @@ export const Text = memo((props: TextProps) => {
 
     return (
         <div
-            className={classNames(cls.Text, {[cls.bold]: bold}, additionalClasses)}
+            className={classNames(
+                cls.Text,
+                { [cls.bold]: bold },
+                additionalClasses,
+            )}
         >
             {title && (
                 <HeaderTag

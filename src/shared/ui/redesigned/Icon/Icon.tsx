@@ -4,7 +4,7 @@ import cls from './Icon.module.scss';
 
 type SvgProps = Omit<React.SVGProps<SVGSVGElement>, 'onClick'>;
 
-interface IconBaseProps extends React.SVGProps<SVGSVGElement> {
+interface IconBaseProps extends SvgProps {
     className?: string;
     Svg: React.VFC<React.SVGProps<SVGSVGElement>>;
 }
@@ -44,8 +44,8 @@ export const Icon = memo((props: IconProps) => {
         return (
             <button
                 type="button"
-                onClick={props.onClick}
                 className={cls.button}
+                onClick={props.onClick}
                 style={{ height, width }}
             >
                 {icon}

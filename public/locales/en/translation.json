@@ -54,5 +54,8 @@
     "Оставьте свой отзыв о статье, это поможет улучщить качество": "Please leave your feedback on this article, it will help us improve the quality.",
     "Спасибо за оценку": "Thanks for your review",
     "Добро пожаловать на страницу статей": "Welcome to articles page",
-    "Здесь вы можете искать и просматривать статьи на различные темы": "You can find and read different articles here"
+    "Здесь вы можете искать и просматривать статьи на различные темы": "You can find and read different articles here",
+    "{{count}} просмотров_zero": "{{count}} views",
+    "{{count}} просмотров_one": "{{count}} view",
+    "{{count}} просмотров_other": "{{count}} views"
 }

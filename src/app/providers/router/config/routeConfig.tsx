@@ -8,19 +8,20 @@ import { AdminPanelPage } from '@/pages/AdminPanelPage';
 import { UserRole } from '@/entities/User';
 import { ForbiddenPage } from '@/pages/ForbiddenPage';
 import { NotFoundPage } from '@/pages/NotFoundPage';
-import { AppRoutes } from '@/shared/const/router';
 import {
-    getRouteAbout,
+    AppRoutes,
+} from '@/shared/const/router';
+import {    getRouteAbout,
     getRouteAdminPanel,
     getRouteArticleCreate,
     getRouteArticleDetails,
     getRouteArticleEdit,
-    getRouteArticles,
     getRouteForbidden,
+    getRouteArticles,
     getRouteMain,
-    getRouteSettings,
     getRouteProfile,
-} from '@/shared/config/routeConfig/routeConfig';
+    getRouteSettings 
+} from '@/shared/config/routeConfig/routeConfig'
 import { AppRoutesProps } from '@/shared/types/router';
 import { SettingsPage } from '@/pages/SettingsPage';
 
