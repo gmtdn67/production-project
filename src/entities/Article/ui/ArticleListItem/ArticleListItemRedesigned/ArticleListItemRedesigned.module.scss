@@ -28,6 +28,10 @@
     height: 100%;
     justify-content: flex-end;
   }
+  
+  .avatar {
+    margin: 8px;
+  }
 }
 
 .BIG {
@@ -43,8 +47,3 @@
   }
 }
 
-.ArticleListItemRedesigned {
-  .BIG {
-    width: 100%;
-  }
-}

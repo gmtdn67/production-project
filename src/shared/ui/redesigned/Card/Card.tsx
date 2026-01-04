@@ -23,6 +23,14 @@ const mapPaddingToClass: Record<CardPadding, string> = {
     '24': 'gap_24',
 };
 
+const Deprecated = () => {
+
+}
+
+const Redesigned = () => {
+
+}
+
 export const Card = memo((props: CardProps) => {
     const {
         className,
