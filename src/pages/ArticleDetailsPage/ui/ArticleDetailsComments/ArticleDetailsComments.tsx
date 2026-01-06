@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { Suspense, useCallback } from 'react';
-import { TextSize, Text } from '@/shared/ui/deprecated/Text';
+import { TextSize, Text as TextDeprecated } from '@/shared/ui/deprecated/Text';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { AddCommentForm } from '@/features/addCommentForm';
 import { CommentList } from '@/entities/Comment';
@@ -13,6 +13,8 @@ import { fetchCommentsByArticleId } from '../../model/services/fetchCommentsByAr
 import { VStack } from '@/shared/ui/deprecated/Stack';
 import { Loader } from '@/shared/ui/deprecated/Loader';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
+import { Text } from '@/shared/ui/redesigned/Text';
+import { ToggleFeatures } from '@/shared/lib/features';
 
 interface ArticleDetailsCommentsProps {
     className?: string;
@@ -40,7 +42,16 @@ export const ArticleDetailsComments = ({
 
     return (
         <VStack max gap="16" className={classNames('', {}, [className])}>
-            <Text size={TextSize.L} title={t('Комментарии')} />
+            <ToggleFeatures
+                feature="isAppRedesigned"
+                on={<Text size="l" title={t('Комментарии')} />}
+                off={
+                    <TextDeprecated
+                        size={TextSize.L}
+                        title={t('Комментарии')}
+                    />
+                }
+            />
             <Suspense fallback={<Loader />}>
                 <AddCommentForm onSendComment={onSendComment} />
             </Suspense>
