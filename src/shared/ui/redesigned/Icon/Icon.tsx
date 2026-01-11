@@ -15,7 +15,7 @@ interface NonClickableIconProps extends IconBaseProps {
 
 interface ClickableBaseProps extends IconBaseProps {
     clickable: true;
-    onClick: () => void;
+    onClick?: () => void;
 }
 
 type IconProps = NonClickableIconProps | ClickableBaseProps;
