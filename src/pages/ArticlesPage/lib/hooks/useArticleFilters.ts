@@ -32,9 +32,8 @@ export function useArticleFilters() {
     const onChangeView = useCallback(
         (view: ArticleView) => {
             dispatch(articlesPageActions.setView(view));
-            debouncedFetchData();
         },
-        [dispatch, debouncedFetchData],
+        [dispatch],
     );
 
     const onChangeSort = useCallback(

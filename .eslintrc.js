@@ -64,7 +64,8 @@ module.exports = {
                     'feature',
                     'color',
                     'variant',
-                    'wrap'
+                    'wrap',
+                    'size'
                 ],
             },
         ],

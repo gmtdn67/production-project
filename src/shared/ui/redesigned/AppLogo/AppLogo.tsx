@@ -9,8 +9,7 @@ interface AppLogoProps {
     size?: number;
 }
 
-export const AppLogo = memo(({ className, size = 50 }: AppLogoProps) => {
-    return (
+export const AppLogo = memo(({ className, size = 50 }: AppLogoProps) => (
         <HStack
             max
             justify="center"
@@ -25,5 +24,4 @@ export const AppLogo = memo(({ className, size = 50 }: AppLogoProps) => {
             <div className={cls.gradientBig} />
             <div className={cls.gradientSmall} />
         </HStack>
-    );
-});
+    ));

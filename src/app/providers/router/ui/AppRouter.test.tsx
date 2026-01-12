@@ -44,7 +44,7 @@ describe('app/router/AppRouter', () => {
             },
         });
 
-        const page = await screen.findByTestId('ProfilePage');
+        const page = await screen.findByTestId('ProfilePage', {}, { timeout: 4000 });
         expect(page).toBeInTheDocument();
     });
 

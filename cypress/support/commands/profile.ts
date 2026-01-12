@@ -5,10 +5,9 @@ export const updateProfile = (name: string, lastname: string) => {
     cy.getByTestId('EditableProfileCardHeader.SaveButton').click();
 };
 
-export const resetProfile = (profileId: string) => {
-    return cy.request({
+export const resetProfile = (profileId: string) => cy.request({
         method: 'PUT',
-        url: `http://localhost:8000/profile/` + profileId,
+        url: `http://localhost:8000/profile/${  profileId}`,
         headers: { Authorization: 'auth' },
         body: {
             id: '4',
@@ -22,7 +21,6 @@ export const resetProfile = (profileId: string) => {
             avatar: 'https://img.freepik.com/premium-vector/test-icon-vector-design-templates_1172029-3110.jpg',
         },
     });
-};
 
 declare global {
     namespace Cypress {

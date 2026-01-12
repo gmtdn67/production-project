@@ -1,7 +1,7 @@
 import { DefinePlugin, RuleSetRule } from 'webpack';
 import path from 'path';
-import { buildCssLoader } from '../build/loaders/buildCssLoader';
 import { Configuration } from 'mini-css-extract-plugin';
+import { buildCssLoader } from '../build/loaders/buildCssLoader';
 
 export default {
     stories: ['../../src/**/*.stories.@(js|jsx|ts|tsx)'],

@@ -3,7 +3,7 @@ import { TestProvider } from '@/shared/lib/tests/componentRender/componentRender
 
 const USER_ID = '1';
 
-describe('EditableProfileCard.cy.ts', () => {
+describe('EditableProfileCard.cy.tsx', () => {
     it('playground', () => {
         cy.intercept('GET', '**/profile/*', { fixture: 'profile.json' });
         cy.mount(
@@ -21,6 +21,5 @@ describe('EditableProfileCard.cy.ts', () => {
                 <EditableProfileCard id={USER_ID} />
             </TestProvider>,
         );
-        // описываем тесты
     });
 });

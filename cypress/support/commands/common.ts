@@ -5,8 +5,7 @@ import { selectByTestId } from '../../e2e/helpers/selectByTestId';
 export const login = (
     username: string = 'testuser',
     password: string = '123',
-) => {
-    return cy
+) => cy
         .request({
             method: 'POST',
             url: `http://localhost:8000/login`,
@@ -22,11 +21,8 @@ export const login = (
             );
             return body;
         });
-};
 
-export const getByTestId = (testId: string) => {
-    return cy.get(selectByTestId(testId));
-};
+export const getByTestId = (testId: string) => cy.get(selectByTestId(testId));
 
 declare global {
     namespace Cypress {
