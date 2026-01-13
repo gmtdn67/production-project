@@ -39,6 +39,7 @@ export const CommentCard = memo((props: CommentCardProps) => {
                     className,
                     cls.loading,
                 ])}
+                gap='8'
             >
                 <div className={cls.header}>
                     <Skeleton width={30} height={30} border="50%" />

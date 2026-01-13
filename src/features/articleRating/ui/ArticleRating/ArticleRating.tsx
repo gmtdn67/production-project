@@ -60,9 +60,9 @@ const ArticleRating = memo((props: ArticleRatingProps) => {
     if (isLoading) {
         return (
             <ToggleFeatures 
-            feature='isAppRedesigned' 
-            on={<Skeleton width="100%" height={120} />} 
-            off={<SkeletonDeprecated width="100%" height={120} />} 
+                feature='isAppRedesigned' 
+                on={<Skeleton width={600} height={120} border='16px'/>} 
+                off={<SkeletonDeprecated width={600} height={120} />} 
             />
         )
     }

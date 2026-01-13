@@ -5,7 +5,8 @@ import { Text } from '@/shared/ui/redesigned/Text';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { CommentCard } from '../CommentCard/CommentCard';
 import { Comment } from '../../model/types/comment';
-import { VStack } from '@/shared/ui/deprecated/Stack';
+import { VStack as VStackDeprecated } from '@/shared/ui/deprecated/Stack';
+import { VStack } from '@/shared/ui/redesigned/Stack';
 import { ToggleFeatures } from '@/shared/lib/features';
 
 interface CommentListProps {
@@ -20,11 +21,30 @@ export const CommentList = memo((props: CommentListProps) => {
 
     if (isLoading) {
         return (
-            <VStack gap="16" max className={classNames('', {}, [className])}>
-                <CommentCard isLoading />
-                <CommentCard isLoading />
-                <CommentCard isLoading />
-            </VStack>
+            <ToggleFeatures
+                feature="isAppRedesigned"
+                on={
+                    <VStack
+                        gap="16"
+                        max
+                        className={classNames('', {}, [className])}
+                    >
+                        <CommentCard isLoading />
+                        <CommentCard isLoading />
+                        <CommentCard isLoading />
+                    </VStack>
+                }
+                off={                   
+                    <VStackDeprecated
+                        gap="16"
+                        max
+                        className={classNames('', {}, [className])}
+                    >
+                        <CommentCard isLoading />
+                        <CommentCard isLoading />
+                        <CommentCard isLoading />
+                    </VStackDeprecated>}
+            />
         );
     }
 

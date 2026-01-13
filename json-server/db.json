@@ -814,6 +814,12 @@
       "articleId": "1",
       "rate": 4,
       "id": "fv7mhMh"
+    },
+    {
+      "userId": "2",
+      "articleId": "11",
+      "rate": 4,
+      "id": "CX5GcHR"
     }
   ],
   "profile-ratings": []

@@ -114,7 +114,7 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
 
     let content;
 
-    if (true) {
+    if (isLoading) {
         content = (
             <ToggleFeatures
                 feature="isAppRedesigned"
@@ -146,7 +146,7 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
                             <Skeleton
                                 className={cls.skeleton}
                                 width="100%"
-                                height="420"
+                                height={420}
                             />
                         </VStack>
                 }
