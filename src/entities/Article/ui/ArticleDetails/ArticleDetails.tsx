@@ -31,7 +31,7 @@ import { Icon as IconDeprecated } from '@/shared/ui/deprecated/Icon';
 import { renderArticleBlock } from './renderBlock';
 import { ToggleFeatures } from '@/shared/lib/features';
 import { Text } from '@/shared/ui/redesigned/Text';
-import { VStack } from '@/shared/ui/redesigned/Stack';
+import { HStack, VStack } from '@/shared/ui/redesigned/Stack';
 import { Skeleton as SkeletonDeprecated } from '@/shared/ui/deprecated/Skeleton';
 import { AppImage } from '@/shared/ui/redesigned/AppImage';
 import { Skeleton } from '@/shared/ui/redesigned/Skeleton';
@@ -114,39 +114,41 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
 
     let content;
 
-    if (isLoading) {
+    if (true) {
         content = (
             <ToggleFeatures
                 feature="isAppRedesigned"
                 on={
-                    <>
-                        <Skeleton
-                            className={cls.avatar}
-                            width={200}
-                            height={200}
-                            border="50%"
-                        />
-                        <Skeleton
-                            className={cls.title}
-                            width={300}
-                            height={32}
-                        />
-                        <Skeleton
-                            className={cls.skeleton}
-                            width={600}
-                            height={24}
-                        />
-                        <Skeleton
-                            className={cls.skeleton}
-                            width="100%"
-                            height={200}
-                        />
-                        <Skeleton
-                            className={cls.skeleton}
-                            width="100%"
-                            height={200}
-                        />
-                    </>
+                    <VStack gap='16' max>
+                        <HStack gap="8">
+                            <Skeleton
+                                className={cls.avatar}
+                                width={32}
+                                height={32}
+                                border="50%"
+                            />
+                            <Skeleton
+                                className={cls.title}
+                                width={300}
+                                height={32}
+                            />
+                        </HStack>
+                            <Skeleton
+                                className={cls.skeleton}
+                                width="100%"
+                                height={38}
+                            />
+                            <Skeleton
+                                className={cls.skeleton}
+                                width="100%"
+                                height={38}
+                            />
+                            <Skeleton
+                                className={cls.skeleton}
+                                width="100%"
+                                height="420"
+                            />
+                        </VStack>
                 }
                 off={
                     <>

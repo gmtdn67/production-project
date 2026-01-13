@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-
+import { NewDesignDecorator } from '@/shared/config/storybook/NewDesignDecorator/NewDesignDecorator';
 import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
 import { Article } from '../../model/types/article';
 import { ArticleBlockType, ArticleType } from '../../model/consts/articleConsts';
@@ -86,4 +86,37 @@ Error.decorators = [
             error: 'error',
         },
     }),
+];
+
+export const NormalRedesigned = Template.bind({});
+NormalRedesigned.args = {};
+NormalRedesigned.decorators = [
+    StoreDecorator({
+        articleDetails: {
+            data: article,
+        },
+    }),
+    NewDesignDecorator
+];
+
+export const LoadingRedesigned = Template.bind({});
+LoadingRedesigned.args = {};
+LoadingRedesigned.decorators = [
+    StoreDecorator({
+        articleDetails: {
+            isLoading: true,
+        },
+    }),
+    NewDesignDecorator
+];
+
+export const ErrorRedesigned = Template.bind({});
+ErrorRedesigned.args = {};
+ErrorRedesigned.decorators = [
+    StoreDecorator({
+        articleDetails: {
+            error: 'error',
+        },
+    }),
+    NewDesignDecorator
 ];
