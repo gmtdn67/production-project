@@ -5,7 +5,7 @@ import { ListBox } from '@/shared/ui/redesigned/Popups';
 import { Country } from '../../model/types/country';
 import { ToggleFeatures } from '@/shared/lib/features';
 
-interface CountrySelectProps {
+export interface CountrySelectProps {
     className?: string;
     value?: Country;
     onChange?: (value: Country) => void;
@@ -17,7 +17,6 @@ const options = [
     { value: Country.Russia, content: Country.Russia },
     { value: Country.Belarus, content: Country.Belarus },
     { value: Country.Kazakhstan, content: Country.Kazakhstan },
-    { value: Country.Ukraine, content: Country.Ukraine },
 ];
 
 export const CountrySelect = memo(
@@ -37,7 +36,7 @@ export const CountrySelect = memo(
             defaultValue: t('Укажите страну'),
             value,
             readonly,
-            direction: 'top right' as const,
+            direction: 'bottom right' as const,
             label: t('Укажите страну'),
         };
         return (

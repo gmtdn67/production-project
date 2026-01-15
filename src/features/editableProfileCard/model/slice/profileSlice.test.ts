@@ -8,7 +8,7 @@ import { updateProfileData } from '../services/updateProfileData/updateProfileDa
 const data = {
     username: 'admin',
     age: 22,
-    country: Country.Ukraine,
+    country: Country.Russia,
     lastname: 'ulbi tv',
     first: 'asd',
     city: 'asf',

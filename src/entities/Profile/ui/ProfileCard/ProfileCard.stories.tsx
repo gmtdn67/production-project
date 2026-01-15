@@ -45,7 +45,19 @@ withError.args = {
     error: 'true',
 };
 
+export const withErrorRedesigned = Template.bind({});
+withErrorRedesigned.args = {
+    error: 'true',
+};
+withErrorRedesigned.decorators = [NewDesignDecorator, ThemeDecorator(Theme.DARK)]
+
 export const Loading = Template.bind({});
 Loading.args = {
     isLoading: true,
 };
+
+export const LoadingRedesigned = Template.bind({});
+LoadingRedesigned.args = {
+    isLoading: true,
+};
+LoadingRedesigned.decorators = [NewDesignDecorator]
